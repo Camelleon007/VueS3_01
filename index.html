@@ -25,7 +25,19 @@
         No goals have been added yet - please start adding some!
       </p>
       <ul v-else>
-        <li v-for="goal in goals">{{ goal }}</li>
+        <li v-for="(goal, index) in goals">{{ index }} - {{ goal }}</li>
+      </ul>
+      <h2>Names</h2>
+      <ul>
+        <li v-for="name in names">{{ name.firstName }} {{ name.lastName }}</li>
+      </ul>
+      <h2>Superheros</h2>
+      <ul>
+        <li v-for="(name, key) in superheroes">{{ key }}: {{ name }}</li>
+      </ul>
+      <h2>Numbers</h2>
+      <ul>
+        <li v-for="num in 5">{{ num }}</li>
       </ul>
     </section>
   </body>

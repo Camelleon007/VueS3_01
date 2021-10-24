@@ -3,6 +3,14 @@ const app = Vue.createApp({
     return {
       enteredGoalValue: "",
       goals: [],
+      names: [
+        { firstName: "Kamil", lastName: "Kowalski" },
+        { firstName: "Max", lastName: "Kowalski" },
+      ],
+      superheroes: {
+        firstAvenger: "Capitan America",
+        strongestAvenger: "Hulk",
+      },
     };
   },
   methods: {
